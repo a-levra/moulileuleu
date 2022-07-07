@@ -6,10 +6,9 @@ Fonctionne de base pour tester le c00 (sauf le dernier exo, il manque un fichier
 
 ## Utilisation :
 
-deposez vos dossier d'exo dans le dossier racine moulileuleu/
-(vous pouvez faire 'cp -r dossier_avec_tout_les_exos/* moulileuleu/').
-il vous suffit ensuite de faire 
+git clone https://github.com/aLeuleu/moulileuleu.git moulileuleu/
 
+cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/
 cd moulileuleu/
 bash moulileuleu.sh
 

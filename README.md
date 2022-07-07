@@ -8,9 +8,13 @@ Fonctionne de base pour tester le c00 (sauf le dernier exo, il manque un fichier
 
 git clone https://github.com/aLeuleu/moulileuleu.git moulileuleu/
 
-cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/
-cd moulileuleu/
-bash moulileuleu.sh
+
+*cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/*
+
+*cd moulileuleu/*
+
+*bash moulileuleu.sh*
+
 
 et la correction commence.
 

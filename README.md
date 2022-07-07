@@ -5,8 +5,12 @@ Moulinette (+norminette )pour les studs 42, avant de perdre des points de correc
 Fonctionne de base pour tester le c00 (sauf le dernier exo, il manque un fichier de reference ex08_result, je vous en prie, rajoutez le ! faite des pull request).
 
 ## Utilisation :
+COPIER/COLLER DANS LE DOSSIER RACINE LE DOSSIER D'EXERCICES QUE VOUS VOULEZ TESTER(par défaut, test le c00)
+par exemple, vous voulez tester le c01 : copier tout ce qu'il y a dans test_c01 et coller le dans le dossier racine de moulileuleu (remplacer les fichiers)
 
-SE METTRE DANS LE DOSSIER PARENT DE VOTRE DOSSIER D'EXERCICES
+puis, SE METTRE DANS LE DOSSIER PARENT DE VOTRE DOSSIER D'EXERCICES
+
+et faire :
 
 *git clone https://github.com/aLeuleu/moulileuleu.git moulileuleu/*
 

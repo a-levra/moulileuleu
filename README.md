@@ -28,9 +28,9 @@ Sinon, les diffrences entre vos sorties et les sorties sont notees dans des fich
 Vous pouvez editer les tests unitaires que vous voulez dans les fichiers "test_exXX.c"
 
 ## Adaptation pour les prochains days de C : 
-- adapter le script shell avec les noms de fonctions
-- adapter les programme test par exercice (attention a la déclaration de la librairie en haut du programme test)
-- adapter les fichier de sortie qui servent de référence
+- adapter le script shell moulileuleu.sh avec les noms de fonctions
+- adapter les programmes tests test_cXX.c par exercice (attention a la déclaration de la fonction testee en haut du programme test)
+- adapter les fichiers de sortie exXX_result qui servent de référence
 
 N'hésitez pas à faire des pull request sur ce depot.
 

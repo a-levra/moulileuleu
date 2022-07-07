@@ -19,6 +19,11 @@ SE METTRE DANS LE DOSSIER PARENT DE VOTRE DOSSIER D'EXERCICES
 
 et la correction commence.
 
+Si tout es OK, c'est bon pour vous.
+Sinon, les diffrences entre vos sorties et les sorties sont notees dans des fichiers *.diff
+
+Vous pouvez editer les tests unitaires que vous voulez dans les fichiers "test_exXX.c"
+
 ## Adaptation pour les prochains days de C : 
 - adapter le script shell avec les noms de fonctions
 - adapter les programme test par exercice (attention a la déclaration de la librairie en haut du programme test)

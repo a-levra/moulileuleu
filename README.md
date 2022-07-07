@@ -19,17 +19,9 @@ N'hésitez pas à faire des pull request sur ce depot.
 
 Mon login : alevra
 
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    moulileuleu.sh                                     :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: alevra <alevra@student.42lyon.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/07 16:09:17 by alevra            #+#    #+#              #
-#    Updated: 2022/07/07 16:13:40 by alevra           ###   ########lyon.fr    #
-#                                                                              #
-# **************************************************************************** #
+
+
+By: alevra <alevra@student.42lyon.fr>
 
 
 Bisous

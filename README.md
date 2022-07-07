@@ -19,6 +19,9 @@ SE METTRE DANS LE DOSSIER PARENT DE VOTRE DOSSIER D'EXERCICES
 
 et la correction commence.
 
+<img width="441" alt="Screen Shot 2022-07-07 at 4 23 12 PM" src="https://user-images.githubusercontent.com/97832618/177819510-d4697da4-8ca1-40fe-b361-8ef8418aa092.png">
+
+
 Si tout es OK, c'est bon pour vous.
 Sinon, les diffrences entre vos sorties et les sorties sont notees dans des fichiers *.diff
 

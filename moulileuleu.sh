@@ -19,7 +19,7 @@ prog=ft_print_alphabet
 i=1
 
 # ecrire ici les exos que vous voulez corriger
-for i in 0 1 2 3 4 5 6 7
+for i in 0 1 2 3 4 5 6 7 8
 do
 
 	case $i in

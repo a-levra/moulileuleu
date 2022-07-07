@@ -18,8 +18,11 @@ SE METTRE DANS LE DOSSIER PARENT DE VOTRE DOSSIER D'EXERCICES
 
 
 et la correction commence.
+exemple avec c01 :
 
-<img width="441" alt="Screen Shot 2022-07-07 at 4 23 12 PM" src="https://user-images.githubusercontent.com/97832618/177819510-d4697da4-8ca1-40fe-b361-8ef8418aa092.png">
+<img width="555" alt="Screen Shot 2022-07-07 at 9 01 58 PM" src="https://user-images.githubusercontent.com/97832618/177855476-4d014f01-4fd3-4fd5-ba74-f48aac141e05.png">
+
+
 
 
 Si tout es OK, c'est bon pour vous.

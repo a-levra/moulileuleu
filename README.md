@@ -25,7 +25,8 @@ exemple avec c01 :
 
 
 
-Si tout es OK, c'est bon pour vous.
+Si tout est OK dans le terminal, votre code a passé tout les tests unitaires personnels et respecte la norminette 42.
+NB : les tests unitaires, ca vaut ce que ca vaut. A vous de faire des trucs de fou ! .. 
 Sinon, les diffrences entre vos sorties et les sorties sont notees dans des fichiers *.diff
 
 Vous pouvez editer les tests unitaires que vous voulez dans les fichiers "test_exXX.c"

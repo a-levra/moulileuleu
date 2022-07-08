@@ -1,5 +1,5 @@
 #include<unistd.h>
-void	ft_print_combn(void);
+void	ft_print_combn(int n);
 int	main(int argc, char **argv)
 {
 	ft_print_combn(1);

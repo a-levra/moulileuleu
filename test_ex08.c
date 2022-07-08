@@ -1,5 +1,5 @@
 #include<unistd.h>
-void	ft_print_combn(void);
+void	ft_print_combn(int n);
 int	main(int argc, char **argv)
 {
 	ft_print_combn(1);
@@ -17,7 +17,7 @@ int	main(int argc, char **argv)
 	ft_print_combn(5);
 	write(1,"\n\n\n",3);
 
-	ft_print_combn(6));
+	ft_print_combn(6);
 	write(1,"\n\n\n",3);
 
 	ft_print_combn(7);

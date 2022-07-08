@@ -2,7 +2,7 @@
 
 Moulinette (+norminette )pour les studs 42, avant de perdre des points de correction bêtement . à enrichir !
 
-Fonctionne de base pour tester le c00 (sauf le dernier exo, il manque un fichier de reference ex08_result, je vous en prie, rajoutez le ! faite des pull request).
+Fonctionne de base pour tester le c00 ! faites des pull request.
 
 ## Utilisation :
 COPIER/COLLER DANS LE DOSSIER RACINE LE DOSSIER D'EXERCICES QUE VOUS VOULEZ TESTER(par défaut, test le c00)

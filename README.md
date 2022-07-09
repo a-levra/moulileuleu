@@ -2,23 +2,14 @@
 
 Moulinette (+norminette )pour les studs 42, avant de perdre des points de correction bêtement . à enrichir !
 
-Fonctionne de base pour tester le c00 ! faites des pull request.
-
 ## Utilisation :
 
+Clonez le repo git, copier tout votre dossier d'exo dans test_cXX, et executer le script !
 
-*git clone https://github.com/aLeuleu/moulileuleu.git moulileuleu/*
-
-*cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/test_c00*
-OU
-*cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/test_c01*
-OU
-*cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/test_cXX*
-
-
-*cd moulileuleu/test_cXX*
-
-*bash moulileuleu.sh*
+`git clone https://github.com/aLeuleu/moulileuleu.git moulileuleu/` <br>
+`cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/test_c00` OU `test_c01` OU `test_cXX` ... <br>
+`cd moulileuleu/test_cXX`<br>
+`bash moulileuleu.sh`
 
 
 et la correction commence.

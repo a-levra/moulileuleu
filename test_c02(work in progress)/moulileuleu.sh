@@ -6,7 +6,7 @@
 #    By: alevra <alevra@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 16:09:17 by alevra            #+#    #+#              #
-#    Updated: 2022/07/09 20:04:31 by alevra           ###   ########lyon.fr    #
+#    Updated: 2022/07/09 20:33:56 by alevra           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,8 +62,11 @@ do
 
 	esac
 	#execute la norminette
+	echo ------------------------------------------
+	echo norminette ex0"$i" : 
 	norminette ex0"$i"/"$prog".c
 	#compile le programme avec un main approprié
+	echo moulileuleu ex0"$i" :
 	gcc -Wall -Wextra -Werror ex0"$i"/"$prog".c test_ex0"$i".c
 	#enregistre la sortie du user dans un fichier
 	echo `./a.out` > "$USER"_ex0"$i"
@@ -71,9 +74,9 @@ do
 	diff  "$USER"_ex0"$i" ex0"$i"_result > ex0"$i".diff
 	if [ -s ex0"$i".diff ] 
 	then
-		echo "$prog KO !"
+		echo "❌❌ KO ! ❌❌"
 		cat ex0"$i".diff
 	else
-		echo "$prog OK !"
+		echo "OK !✔️"
 	fi
 done

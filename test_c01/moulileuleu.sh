@@ -6,7 +6,7 @@
 #    By: alevra <alevra@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 16:09:17 by alevra            #+#    #+#              #
-#    Updated: 2022/07/09 19:57:34 by alevra           ###   ########lyon.fr    #
+#    Updated: 2022/07/09 20:34:15 by alevra           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,7 @@ do
 
 	esac
 	#execute la norminette
+	#execute la norminette
 	echo ------------------------------------------
 	echo norminette ex0"$i" : 
 	norminette ex0"$i"/"$prog".c
@@ -74,9 +75,9 @@ do
 	diff  "$USER"_ex0"$i" ex0"$i"_result > ex0"$i".diff
 	if [ -s ex0"$i".diff ] 
 	then
-		echo "$prog KO !"
+		echo "❌❌ KO ! ❌❌"
 		cat ex0"$i".diff
 	else
-		echo "$prog OK !"
+		echo "OK !✔️"
 	fi
 done

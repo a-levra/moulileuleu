@@ -14,7 +14,7 @@
 
 void ft_putnbr(int nb);
 void ft_ultimate_ft(int *********nbr);
-//MERCI GDURAND !! ^_^
+//MERCI GRDURAND !! ^_^
 int main(int argc, char **argv)
 {
 	int n;

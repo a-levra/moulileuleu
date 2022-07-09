@@ -6,7 +6,7 @@
 #    By: alevra <alevra@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 16:09:17 by alevra            #+#    #+#              #
-#    Updated: 2022/07/07 16:13:40 by alevra           ###   ########lyon.fr    #
+#    Updated: 2022/07/09 20:04:31 by alevra           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,7 @@ do
 	#execute la norminette
 	norminette ex0"$i"/"$prog".c
 	#compile le programme avec un main approprié
-	gcc ex0"$i"/"$prog".c test_ex0"$i".c
+	gcc -Wall -Wextra -Werror ex0"$i"/"$prog".c test_ex0"$i".c
 	#enregistre la sortie du user dans un fichier
 	echo `./a.out` > "$USER"_ex0"$i"
 	#controle la différence entre la sortie du user et un fichier de reference (depend du main)

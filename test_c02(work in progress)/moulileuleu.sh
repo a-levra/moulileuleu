@@ -6,7 +6,7 @@
 #    By: alevra <alevra@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 16:09:17 by alevra            #+#    #+#              #
-#    Updated: 2022/07/11 12:40:15 by alevra           ###   ########lyon.fr    #
+#    Updated: 2022/07/11 15:47:35 by alevra           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ prog=ft_print_alphabet
 i=1
 
 # ecrire ici les exos que vous voulez corriger
-for i in 00 01 02 03 04 05 06 07 08 09 10 11
+for i in 00 01 02 03 04 05 06 07 08 09 10
 do
 
 	case $i in
@@ -91,4 +91,5 @@ do
 	else
 		echo "OK !✔️"
 	fi
+	echo cette moulinette ne corrige que jusqua ex10 (cause flemme) 
 done

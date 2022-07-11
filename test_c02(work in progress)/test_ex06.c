@@ -2,12 +2,15 @@
 void	ft_putnbr(int nb);
 
 int ft_str_is_printable(char *str);
-int	main(int argc, char **argv)
+int	main()
 {
 	int i;
+	char c;
+	
 	for(i=0;i < 300;i++)
 	{
-		ft_putnbr(ft_str_is_printable(i));
+		c = i;
+		ft_putnbr(ft_str_is_printable(&c));
 	}
 
 	return (0);

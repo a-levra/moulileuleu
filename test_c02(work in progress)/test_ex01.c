@@ -5,7 +5,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n);
 void	ft_putstr(char *str);
 void	ft_putchar(char c);
 
-int	main(int argc, char **argv)
+int	main()
 {
 	char NUMBERS[5]="0123\0";
 	char LETTERS[5]="aaaaa";

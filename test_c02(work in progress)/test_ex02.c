@@ -1,7 +1,7 @@
 #include<unistd.h>
 void	ft_putnbr(int nb);
 int	ft_str_is_alpha(char *str);
-int	main(int argc, char **argv)
+int	main()
 {
 	ft_putnbr(ft_str_is_alpha("abc\0"));
 	ft_putnbr(ft_str_is_alpha("zewg\0"));

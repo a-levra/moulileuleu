@@ -2,7 +2,7 @@
 void	ft_putnbr(int nb);
 
 int ft_str_is_lowercase(char *str);
-int	main(int argc, char **argv)
+int	main()
 {
 
 	ft_putnbr(ft_str_is_lowercase("dfvrstbrsbs"));

@@ -5,52 +5,64 @@ prog=ft_print_alphabet
 i=1
 
 
-for i in 0 1 2 3 4 5 6 7 8
+for i in 00 01 02 03 04 05 06 07 08 09 10 11
 do
 
 	case $i in
 
-	0)
-		prog=ft_ft
+	00)
+		prog=ft_strcpy
 		;;
 
-	1)
-		prog=ft_ultimate_ft
+	01)
+		prog=ft_strncpy
 		;;
 
-	2)
-		prog=ft_swap
+	02)
+		prog=ft_str_is_alpha
 		;;
 
-	3)
-		prog=ft_div_mod
+	03)
+		prog=ft_str_is_numeric
 		;;
 
-	4)
-		prog=ft_ultimate_div_mod
+	04)
+		prog=ft_str_is_lowercase
 		;;
 
-	5)
-		prog=ft_putstr
+	05)
+		prog=ft_str_is_uppercase
 		;;
 
-	6)
-		prog=ft_strlen
+	06)
+		prog=ft_str_is_printable
 		;;
 
-	7)
-		prog=ft_rev_int_tab
+	07)
+		prog=ft_strupcase
 		;;
 
-	8)
-		prog=ft_sort_int_tab
+	08)
+		prog=ft_strlowcase
+		;;
+
+	09)
+		prog=ft_strcapitalize
+		;;
+
+	10)
+		prog=ft_strlcpy
+		;;
+
+	11)
+		prog=ft_putstr_non_printable
 		;;
 
 	esac
 
-
-	gcc ex0"$i"/"$prog".c test_ex0"$i".c
-	echo `./a.out` > ex0"$i"_result
+	rm ex"$i"_result
+	gcc ex"$i"/"$prog".c test_ex"$i".c
+	echo `./a.out` > ex"$i"_result
 	
 
 done

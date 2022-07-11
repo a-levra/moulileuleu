@@ -6,7 +6,7 @@
 #    By: alevra <alevra@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 16:09:17 by alevra            #+#    #+#              #
-#    Updated: 2022/07/09 20:33:56 by alevra           ###   ########lyon.fr    #
+#    Updated: 2022/07/11 12:40:15 by alevra           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,63 +19,75 @@ prog=ft_print_alphabet
 i=1
 
 # ecrire ici les exos que vous voulez corriger
-for i in 0 1 2 3 4 5 6 7 8
+for i in 00 01 02 03 04 05 06 07 08 09 10 11
 do
 
 	case $i in
 
-	0)
-		prog=ft_putchar
+	00)
+		prog=ft_strcpy
 		;;
 
-	1)
-		prog=ft_print_alphabet
+	01)
+		prog=ft_strncpy
 		;;
 
-	2)
-		prog=ft_print_reverse_alphabet
+	02)
+		prog=ft_str_is_alpha
 		;;
 
-	3)
-		prog=ft_print_numbers
+	03)
+		prog=ft_str_is_numeric
 		;;
 
-	4)
-		prog=ft_is_negative
+	04)
+		prog=ft_str_is_lowercase
 		;;
 
-	5)
-		prog=ft_print_comb
+	05)
+		prog=ft_str_is_uppercase
 		;;
 
-	6)
-		prog=ft_print_comb2
+	06)
+		prog=ft_str_is_printable
 		;;
 
-	7)
-		prog=ft_putnbr
+	07)
+		prog=ft_strupcase
 		;;
 
-	8)
-		prog=ft_print_combn
+	08)
+		prog=ft_strlowcase
+		;;
+
+	09)
+		prog=ft_strcapitalize
+		;;
+
+	10)
+		prog=ft_strlcpy
+		;;
+
+	11)
+		prog=ft_putstr_non_printable
 		;;
 
 	esac
 	#execute la norminette
 	echo ------------------------------------------
-	echo norminette ex0"$i" : 
-	norminette ex0"$i"/"$prog".c
+	echo norminette ex"$i" : 
+	norminette ex"$i"/"$prog".c
 	#compile le programme avec un main approprié
-	echo moulileuleu ex0"$i" :
-	gcc -Wall -Wextra -Werror ex0"$i"/"$prog".c test_ex0"$i".c
+	echo moulileuleu ex"$i" :
+	gcc -Wall -Wextra -Werror ex"$i"/"$prog".c test_ex"$i".c
 	#enregistre la sortie du user dans un fichier
-	echo `./a.out` > "$USER"_ex0"$i"
+	echo `./a.out` > "$USER"_ex"$i"
 	#controle la différence entre la sortie du user et un fichier de reference (depend du main)
-	diff  "$USER"_ex0"$i" ex0"$i"_result > ex0"$i".diff
-	if [ -s ex0"$i".diff ] 
+	diff  "$USER"_ex"$i" ex"$i"_result > ex"$i".diff
+	if [ -s ex"$i".diff ] 
 	then
 		echo "❌❌ KO ! ❌❌"
-		cat ex0"$i".diff
+		cat ex"$i".diff
 	else
 		echo "OK !✔️"
 	fi

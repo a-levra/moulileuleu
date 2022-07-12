@@ -17,7 +17,7 @@ int	main(int argc, char **argv)
 	ft_print_combn(5);
 	write(1,"\n\n\n",3);
 
-	ft_print_combn(6));
+	ft_print_combn(6);
 	write(1,"\n\n\n",3);
 
 	ft_print_combn(7);
@@ -28,10 +28,6 @@ int	main(int argc, char **argv)
 
 	ft_print_combn(9);
 	write(1,"\n\n\n",3);
-	
-	ft_print_combn(9);
-	write(1,"\n\n\n",3);
-
 
 	return (0);
 }

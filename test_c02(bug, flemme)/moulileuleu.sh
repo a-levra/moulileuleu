@@ -91,5 +91,5 @@ do
 	else
 		echo "OK !✔️"
 	fi
-	echo cette moulinette ne corrige que jusqua ex10 (cause flemme) 
+	echo "cette moulinette ne corrige que jusqua ex10 (cause flemme, bienvenue aux contribs)" 
 done

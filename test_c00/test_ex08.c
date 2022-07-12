@@ -4,11 +4,11 @@ int	main(void)
 {
 	int	i;
 	
-	i = 0;
+	i = 1;
 	while(i < 10)
 	{
 		ft_print_combn(i);
-		write(1,"\n\n\n",3);
+		i++;
 	}
 
 	return (0);

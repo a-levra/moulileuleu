@@ -1,0 +1,143 @@
+#!/bin/bash
+echo ------------------------------------------
+clear
+
+export mouli_dir=
+
+export prog
+
+export i
+
+export days
+
+export first_prog_name
+
+export exercices
+
+export last_exercice
+
+#les variable ci dessous me permettent de faire du formattage de texte facilement
+bold=$(tput bold)
+normal=$(tput sgr0)
+blue=$(tput setaf 4)
+red=$(tput setaf 1)
+black=$(tput setaf 0)
+green=$(tput setaf 2)
+
+#TODO si il existe un fichier ft.h -> c'est le days c08
+#sinon si il existe un fichier libft_creator.sh -> c'est le days C09
+#sinon si il existe un fichier Makefile -> c'est le days C10
+#sinon :
+first_prog_name=$(echo ./ex00/*| cut -d/ -f3 | cut -d. -f1)
+
+case $first_prog_name in
+
+ft_putchar)
+	days=c00
+    last_exercice=08
+    exercices=("ft_putchar" "ft_print_alphabet" "ft_print_reverse_alphabet" "ft_print_numbers" "ft_is_negative" "ft_print_comb" "ft_print_comb2" "ft_putnbr" "ft_print_combn")
+	;;
+
+ft_ft)
+	days=c01
+    last_exercice=08
+    exercices=("ft_ft" "ft_ultimate_ft" "ft_swap" "ft_div_mod" "ft_ultimate_div_mod" "ft_putstr" "ft_strlen" "ft_rev_int_tab" "ft_sort_int_tab" )
+	;;
+
+ft_strcpy)
+	days=c02
+    last_exercice=12
+    exercices=("ft_strcpy" "ft_strncpy" "ft_str_is_alpha" "ft_str_is_numeric" "ft_str_is_lowercase" "ft_str_is_uppercase" "ft_str_is_printable" "ft_strupcase" "ft_strlowcase" "ft_strcapitalize" "ft_strlcpy" "ft_putstr_non_printable" "ft_print_memory")
+	;;
+
+ft_strcmp)
+	days=c03
+    last_exercice = 05
+	;;
+
+ft_strlen)
+    last_exercice = 05
+	days=c04
+	;;
+
+ft_iterative_factorial)
+	days=c05
+    last_exercice = 08
+	;;
+
+ft_print_program_name)
+	days=c06
+    last_exercice = 03
+	;;
+
+ft_strdup)
+	days=c07
+    last_exercice = 05
+	;;
+
+ft_foreach)
+    last_exercice = 07
+	days=c11
+	;;
+
+ft_create_elem)
+    last_exercice = 17
+	days=c12
+	;;
+
+btree_create_node)
+    last_exercice = 07
+	days=c13
+	;;
+
+
+esac
+echo $blue $bold days : $days $normal
+echo
+j=0
+for i in 00 01 02 03 04 05 06 07 08 09 10 11 12 13;
+do
+    if [[ $i > $last_exercice ]]
+        then
+        break
+    fi
+	#execute la norminette
+	echo -n $blue $bold ex"$i" $normal: 
+    if [[ -d ex"$i" ]] && [[ -f  ex"$i"/${exercices[$j]}.c ]]
+        then
+        FILE="$mouli_dir"/"$days"/tests/test_ex"$i".c
+        if [ -f "$FILE" ]; then
+            norminette ex"$i"|grep -v OK
+        	#compile le programme avec un main approprié
+        	gcc -Wall -Wextra -Werror -c ex"$i"/${exercices[$j]}.c
+        	gcc -c $mouli_dir/$days/tests/test_ex"$i".c
+        	gcc *.o
+            rm *.o
+        	#enregistre la sortie du user dans un fichier
+        	echo `./a.out| tr -d '\0' ` > $mouli_dir/$days/results/"$USER"_ex"$i"
+        	#controle la différence entre la sortie du user et un fichier de reference (depend du main)
+        
+        	diff  $mouli_dir/$days/results/"$USER"_ex"$i" $mouli_dir/$days/expected_results/ex"$i"_expected_result > $mouli_dir/$days/diff/ex"$i".diff
+        	if [ -s $mouli_dir/$days/diff/ex"$i".diff ] 
+            	then
+            		echo "❌❌ " $red KO ! "❌❌" $normal
+            		cat ex"$i".diff
+            	else
+            		echo $green " OK !✔️" $normal
+        	fi
+        else
+
+            echo $black $bold "the moulileuleu can not solve this exercice for the moment .. " $normal
+
+        fi
+
+    else
+        echo $red "   "ex"$i" does not exist"❌❌" $normal
+
+    fi
+    if [[ -f ./a.out ]]
+        then
+        rm ./a.out
+    fi
+    ((j++))
+done

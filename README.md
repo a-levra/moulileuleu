@@ -1,12 +1,12 @@
 # moulileuleu
 
-Moulinette pour stud 42, corrige la piscine de Lyon Juillet 2022... à enrichir !
+Moulinette pour stud 42, corrige la piscine de Lyon Juillet 2022... à enrichir ! <br>
 Ce programme utilise la norminette, installez la norminette avant d'installer ce programme : <br>
 `pip install norminette` <br>
 ## Utilisation :
 
 Clonez le repo git dans un dossier ou vous souhaitez installer la moulileuleu <br>
-`git clone https://github.com/aLeuleu/moulileuleu.git moulileuleu/` <br>
+`git clone https://github.com/aLeuleu/moulileuleu.git` <br>
 Lancez le script d'installation : <br>
 `sh install_mouli.sh` <br>
 L 'installation est terminée. <br>

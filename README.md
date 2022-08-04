@@ -1,18 +1,23 @@
 # moulileuleu
 
-Moulinette (+norminette )pour les studs 42, avant de perdre des points de correction bêtement . à enrichir !
-
+Moulinette pour stud 42, corrige la piscine de Lyon Juillet 2022... à enrichir !
+Ce programme utilise la norminette, installez la norminette avant d'installer ce programme : <br>
+`pip install norminette` <br>
 ## Utilisation :
 
-Clonez le repo git, copier tout votre dossier d'exo dans test_cXX, et executer le script !
-
+Clonez le repo git dans un dossier ou vous souhaitez installer la moulileuleu <br>
 `git clone https://github.com/aLeuleu/moulileuleu.git moulileuleu/` <br>
-`cp -r VOTRE_DOSSIER_OU_IL_Y_A_TOUT_LES_EXOS/* moulileuleu/test_c00` OU `test_c01` OU `test_cXX` ... <br>
-`cd moulileuleu/test_cXX`<br>
-`bash moulileuleu.sh`
+Lancez le script d'installation : <br>
+`sh install_mouli.sh` <br>
+L 'installation est terminée. <br>
 
-
+Rendez vous ensuite dans votre dossier d'exo, tapez simplement "moulileuleu" comme si vous tapiez "norminette",
 et la correction commence.
+La moulileuleu devine toute seule dans quel days vous etes.
+
+Mise à jour :
+Dans le dossier d'installation de la moulileuleu, faites simplement un git pull : <br> 
+`git pull` <br>
 exemple avec c01 :
 
 <img width="555" alt="Screen Shot 2022-07-07 at 9 01 58 PM" src="https://user-images.githubusercontent.com/97832618/177855476-4d014f01-4fd3-4fd5-ba74-f48aac141e05.png">

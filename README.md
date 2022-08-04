@@ -31,11 +31,12 @@ Sinon, les différences entre vos sorties et les sorties attendues sont notees d
 ## Adaptation pour les prochains days de C : 
 1) rajoutez, si ce nést pas deja fait, le nom des programmes dans le script moulileuleu (cette derniere est installée en generale dans /home/$USER/.local/bin):
  ![image](https://user-images.githubusercontent.com/97832618/182904945-2d9f8606-1fbb-4cca-877f-34229ebfbfd1.png)
+ ici, on voit que la variable exercices donne les noms dess exos pour les premiers days, mais pas les suivant.
+ IL suffit de copier coller cette variable dans les prochains days, et de remplacer les noms des fichiers
 
-
-2)Revenez dans le dossier ou vous avec cloner le repo, et creez un dossier pour un nouveau days, reprennez la meme logique que les days precedents :
-Faites vos mains de tests dans le dossier "tests", ecrivez le resultat attendu de chaque mains de test dans le dossier "expected output"
-Si les fichiers sont présent, la moulileuleu les executeras.
+2)Revenez dans le dossier ou vous avec cloner le repo, et creez un dossier pour un nouveau days, reprennez la meme logique que les days precedents : <br>
+Faites vos mains de tests dans le dossier "tests", ecrivez le resultat attendu de chaque mains de test dans le dossier "expected results" <br>
+Si les mains de tests sont présent, la moulileuleu les executeras.
 
 ## Mise à jour :
 Dans le dossier d'installation de la moulileuleu, faites simplement un git pull : <br> 
